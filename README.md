@@ -9,21 +9,16 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 
 ## Algorithm
 
-Step 1. Start the program
-
-Step 2. Import the necessary python libraries
-
-Step 3. Read the dataset of Mall_Customers csv file
-
-Step 4. From sklearn libraary select the cluster and import KMeans Clustering
-
-Step 5. Find the sum of squared distance between each points and the centroid in a cluster using Elbow Method
-
-Step 6. Plot the graph x and y as Number of Clusters and wcss respectively
-
-Step 7. Using the matplotlib library draw the scatter plot for the given number of clusters (ie. here n_clusters = 5)
-
-Step 8. Stop the program
+1. **Load Data**: Read the customer dataset.
+2. **Explore Data**: Check the dataset structure and for missing values.
+3. **Initialize K-Means**: Prepare to find optimal number of clusters using the Elbow Method.
+4. **Calculate WCSS**: Iterate through a range of cluster numbers (1-10) to calculate Within-Cluster Sum of Squares (WCSS).
+5. **Plot Elbow Graph**: Visualize WCSS against the number of clusters to identify the elbow point.
+6. **Fit K-Means Model**: Choose optimal clusters (e.g., 5) and fit the model.
+7. **Predict Clusters**: Assign cluster labels to the data points.
+8. **Add Cluster Labels**: Add predicted cluster labels to the original dataset.
+9. **Segment Data**: Create subsets of data for each cluster.
+10. **Visualize Clusters**: Plot the clusters using a scatter plot of Annual Income vs. Spending Score.
 
 ## Program:
 ```
